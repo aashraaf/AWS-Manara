@@ -19,7 +19,7 @@ The architecture is designed to reflect real-world best practices for hosting a 
 
 ## 🧱 Architecture Diagram
 
-
+![Architecture Diagram](./AWS Architecture.png)
 
 ## 🧩 Default Architecture
 The web application is structured to ensure high availability and scalability through the following AWS resources:
