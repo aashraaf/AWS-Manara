@@ -5,7 +5,7 @@ This project demonstrates how to deploy a scalable and highly available eCommerc
 The architecture is designed to reflect real-world best practices for hosting a dynamic online store, such as handling user traffic spikes, ensuring fault tolerance, and monitoring application health. Security, cost-efficiency, and performance optimization are also core components of the setup.
 
 ## 🎯 Key AWS Services
--*Amazon EC2:* Hosts the web application.
+- *Amazon EC2:* Hosts the web application.
 
 - *Application Load Balancer (ALB):* Distributes traffic across multiple EC2 instances.
 
