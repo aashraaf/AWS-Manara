@@ -7,34 +7,34 @@ The architecture is designed to reflect real-world best practices for hosting a 
 ## 🎯 Key AWS Services
 -*Amazon EC2:* Hosts the web application.
 
--*Application Load Balancer (ALB):* Distributes traffic across multiple EC2 instances.
+- *Application Load Balancer (ALB):* Distributes traffic across multiple EC2 instances.
 
--*Auto Scaling Group (ASG):* Automatically adjusts capacity based on traffic.
+- *Auto Scaling Group (ASG):* Automatically adjusts capacity based on traffic.
 
--*Amazon RDS :* Provides a managed relational database.
+- *Amazon RDS :* Provides a managed relational database.
 
--*IAM:* Manages secure role-based access.
+- *IAM:* Manages secure role-based access.
 
--*Amazon CloudWatch & SNS:* Monitors system performance and sends alerts.
+- *Amazon CloudWatch & SNS:* Monitors system performance and sends alerts.
 
 ## 🧱 Architecture Diagram
 
 ![Architecture Diagram](./AWS%20Architecture.png)
 
 ## 🧩 Default Architecture
-The web application is structured to ensure high availability and scalability through the following AWS resources:
+*The web application is structured to ensure high availability and scalability through the following AWS resources:*
 
-VPC with public and private subnets across multiple Availability Zones.
+- VPC with public and private subnets across multiple Availability Zones.
 
-Public Subnets host the Application Load Balancer (ALB).
+- Public Subnets host the Application Load Balancer (ALB).
 
-Private Subnets host EC2 instances in an Auto Scaling Group.
+- Private Subnets host EC2 instances in an Auto Scaling Group.
 
-Amazon RDS in a Multi-AZ deployment for data persistence.
+- Amazon RDS in a Multi-AZ deployment for data persistence.
 
-IAM Roles assigned to EC2 instances for secure access to necessary AWS services.
+- IAM Roles assigned to EC2 instances for secure access to necessary AWS services.
 
-CloudWatch Alarms and SNS Topics for real-time monitoring and alerting.
+- CloudWatch Alarms and SNS Topics for real-time monitoring and alerting.
 
 ## 🔁 Request Flow and Monitoring
 1. *User to Application Load Balancer*
