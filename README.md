@@ -28,7 +28,7 @@ The architecture is designed to reflect real-world best practices for hosting a 
 
 - Public Subnets host the Application Load Balancer (ALB).
 
-- Private Subnets on diffrent availability domains host EC2 instances in an Auto Scaling Group to ensure application high availbility.
+- Private Subnets on diffrent Availability Zones host EC2 instances in an Auto Scaling Group to ensure application high availbility.
 
 - Amazon RDS in a Multi-AZ deployment for data persistence.
 
