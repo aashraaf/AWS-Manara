@@ -19,7 +19,7 @@ The architecture is designed to reflect real-world best practices for hosting a 
 
 ## 🧱 Architecture Diagram
 
-![Architecture Diagram](./AWS%20Architecture.png)
+![Architecture Diagram](./AWS%20Manara%20Updated.png)
 
 ## 🧩 Default Architecture
 *The web application is structured to ensure high availability and scalability through the following AWS resources:*
@@ -28,7 +28,7 @@ The architecture is designed to reflect real-world best practices for hosting a 
 
 - Public Subnets host the Application Load Balancer (ALB).
 
-- Private Subnets host EC2 instances in an Auto Scaling Group.
+- Private Subnets on diffrent availability domains host EC2 instances in an Auto Scaling Group to ensure application high availbility.
 
 - Amazon RDS in a Multi-AZ deployment for data persistence.
 
